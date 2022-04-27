@@ -3,7 +3,7 @@ Shader "TaLearn/Outline"
     Properties
     {
         _OutlineColor("Outline Color", Color) = (0,0,0,1)
-        _Outline("Outline width", Range(.002, 0.03)) = .005
+        _OutlineWidth("Outline width", Range(.002, 0.03)) = .005
     }
         SubShader
     {
@@ -26,7 +26,7 @@ Shader "TaLearn/Outline"
             #pragma multi_compile_fog
 
             CBUFFER_START(UnityPerMaterial)
-            float _Outline;
+            float _OutlineWidth;
             float4 _OutlineColor;
             CBUFFER_END
 
@@ -51,11 +51,10 @@ Shader "TaLearn/Outline"
                 UNITY_SETUP_INSTANCE_ID(input);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(output);
 
-                input.positionOS.xyz += input.normalOS.xyz * _Outline;
+                input.positionOS.xyz += input.normalOS.xyz * _OutlineWidth;
 
                 VertexPositionInputs vertexInput = GetVertexPositionInputs(input.positionOS.xyz);
                 output.positionCS = vertexInput.positionCS;
-
                 output.color = _OutlineColor;
                 output.fogCoord = ComputeFogFactor(output.positionCS.z);
                 return output;
