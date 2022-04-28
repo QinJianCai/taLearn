@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{DBCD39D6-D37C-644E-1637-5A78D4E7D4A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taecg.shaderReference.Editor", "taecg.shaderReference.Editor.csproj", "{8BDB7322-5E01-CA77-5447-EA8C60690E9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{DBCD39D6-D37C-644E-1637-5A78D4E7D4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBCD39D6-D37C-644E-1637-5A78D4E7D4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBCD39D6-D37C-644E-1637-5A78D4E7D4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDB7322-5E01-CA77-5447-EA8C60690E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDB7322-5E01-CA77-5447-EA8C60690E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDB7322-5E01-CA77-5447-EA8C60690E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDB7322-5E01-CA77-5447-EA8C60690E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
